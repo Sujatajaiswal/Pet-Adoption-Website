@@ -1,0 +1,57 @@
+/* Container for the cards */
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+/* Each pet card styling */
+.card{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px #da0000d9; /* Add shadow for better appearance */
+}
+
+/* Styling the images */
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+/* Header text styling */
+h2{
+    color: red;
+}
+
+h3{
+    color: red;
+}
+
+/* Highlighted text */
+span{
+    color: aqua;
+}
+
+/* Align text inside the cards */
+p{
+    text-align: justify; /* Makes the text more aligned */
+    line-height: 1.5; /* Improves readability */
+}
+
+/* Media query for smaller devices (responsive) */
+@media (max-width: 768px){
+    #pets{
+        flex-direction: column; /* Stack the cards vertically on small screens */
+        align-items: center; /* Center the cards */
+    }
+}
+
+@media (max-width: 375px){
+    .card{
+        width: 90%; /* Adjust card width for very small screens */
+    }
+}
